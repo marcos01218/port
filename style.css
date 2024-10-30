@@ -1,131 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #6E859F;
+    --cor-secundaria: #284260;
+    --cor-destaque: #C92BFC;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
 }
 
-
-.cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1C0B2B;
-    padding: 10px;
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
 }
 
-.logo img {
-    max-width: 100%;
-    height: auto;
+a, .btn-link:hover {
+    color: var(--cor-principal)
 }
 
-
-.menu {
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    color: #ffffff;
-    font-family: "Orbitron", sans-serif;
-    font-weight: 600;
-    margin-top: 10px;
-    padding: 0;
-    list-style: none;
+a:hover{
+    color: var(--cor-destaque);
 }
 
-.cabecalho li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.contato, .projetos, .integrantes {
-    padding: 10px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-.interior {
-    width: 100%;
-    height: auto;
-    background-image: radial-gradient(#413B6B, #251434 75%, #241233);
-    padding: 20px;
-    text-align: center;
-}
-
-.embaixo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.textoum {
-    font-family: "Orbitron", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.textodois, .textotres {
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    padding: 0 20px;
-}
-
-
-.imagembraba {
-    max-width: 90%;
-    height: auto;
-    margin-top: 20px;
-}
-
-
-@media (max-width: 600px) {
-    .cabecalho {
-        padding: 10px;
-    }
-
-    .menu {
-        flex-direction: column;
-        font-size: 24px;
-        margin-top: 15px;
-    }
-
-    .cabecalho li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .textoum {
-        font-size: 28px;
-    }
-
-    .textodois, .textotres {
-        font-size: 20px;
-        padding: 0 10px;
-    }
-
-    .imagembraba {
-        width: 80%;
-        margin-top: 15px;
-    }
-}
